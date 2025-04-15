@@ -5,12 +5,18 @@ import { ContainerProps } from '../../types';
 const Container: React.FC<ContainerProps> = ({ 
   children, 
   className = '',
-  id
+  id,
+  fullWidth = false,
+  noPadding = false
 }) => {
   return (
     <div 
       id={id}
-      className={`container mx-auto px-4 md:px-6 lg:px-8 max-w-7xl ${className}`}
+      className={`
+        ${fullWidth ? 'w-full' : 'container mx-auto'}
+        ${noPadding ? '' : 'px-4 sm:px-6 md:px-8 lg:px-10'} 
+        ${className}
+      `}
     >
       {children}
     </div>

@@ -1,3 +1,4 @@
+// assets/icons/index.tsx
 // Exportação de todos os ícones
 import InstagramIcon from './InstagramIcon';
 import WhatsAppIcon from './WhatsAppIcon';
@@ -11,6 +12,8 @@ import ScissorsIcon from './ScissorsIcon';
 import SparklesIcon from './SparklesIcon';
 import StarsIcon from './StarsIcon';
 import CalendarIcon from './CalendarIcon';
+import PlayIcon from './PlayIcon';
+import PauseIcon from './PauseIcon.tsx';
 
 // Função para obter ícone por nome
 const getIconByName = (name: string) => {
@@ -27,6 +30,8 @@ const getIconByName = (name: string) => {
     calendar: CalendarIcon,
     phone: PhoneIcon,
     email: EmailIcon,
+    play: PlayIcon,
+    pause: PauseIcon,
   };
   
   return icons[name] || null;
@@ -45,5 +50,7 @@ export {
   SparklesIcon,
   StarsIcon,
   CalendarIcon,
+  PlayIcon,
+  PauseIcon,
   getIconByName
 };

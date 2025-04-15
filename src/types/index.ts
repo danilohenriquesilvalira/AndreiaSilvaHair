@@ -73,3 +73,12 @@ export interface ContainerProps {
   className?: string;
   id?: string;
 }
+
+// types/index.ts - Atualizando o ContainerProps
+export interface ContainerProps {
+  children: React.ReactNode;
+  className?: string;
+  id?: string;
+  fullWidth?: boolean;   // Controla se o container terá largura 100% ou não
+  noPadding?: boolean;   // Controla se o container terá padding ou não
+}
